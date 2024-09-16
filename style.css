@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    min-height: 100vh;
+    
+    background: url(background.png);
+    background-size: cover;
+    padding-right: calc(10%); 
+}
+
+.wrapper {
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0); /* Background color with transparency */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: absolute; /* Absolute positioning for precise control */
+    right: 15px; /* Align to the right edge of the viewport */
+    top: 56%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: start;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 20px 0;    
+}
+
+.input-box input {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(93, 107, 85);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #080808;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #080808;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn {
+    width: 80%;
+    height: 35px;
+    background: rgb(243, 109, 109);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: start;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+.nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-logo img {
+    height: 80px;
+    width: 80px;
+    margin-right: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-logo img:last-child {
+    margin-right: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.below-image-container {
+    position: static;
+    top: 25px; 
+    left: 30px;
+    z-index: 20; 
+}
+
+.sign-up-form {
+        display: none; 
+    }
+    
+
+#sign-up-form {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    right: 15px;
+    top: 100px;
+}
+
+#sign-up-form.show {
+    display: flex; 
+}
+
+#sign-up-form h1 {
+    font-size: 36px; 
+    text-align: start; 
+}
+
+#sign-up-form .input-box input {
+    font-size: 16px; /
+}
+
+#sign-up-form .btn {
+    font-size: 16px; 
+}
+#sign-up-form .register-link {
+    font-size: 16px; 
+    text-align: start; 
+}
+
+#sign-up-form .register-link a {
+    font-weight: 600;
+}
+#sign-up-form .input-box {
+    margin: 15px 0; 
+}

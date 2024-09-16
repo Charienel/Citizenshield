@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="clogo.png" alt="Logo 1">
+        </div>
+        <div class="nav-logo">
+            <img src="seal.png" alt="Logo 2">
+        </div>
+        
+    </nav>
+   
+
+    <div class="wrapper">
+        
+        <form id="login-form">
+            <h1>Log In</h1>
+            <p>Welcome back!<br><scan>Please enter your details.</scan></p>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <button type="button" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#" id="sign-up-link">Sign Up</a></p>
+            </div>
+        </form>
+
+        
+        <form id="sign-up-form" class="sign-up-form">
+            <h1>Sign Up</h1>
+            
+            <div class="input-box">
+                <input type="text" placeholder="First Name" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Last Name" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <button type="button" class="btn">Create Account</button>
+            <div class="register-link">
+                <p>Already have an account? <a href="#" id="login-link">Log In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+       
+        const signUpLink = document.getElementById('sign-up-link');
+        const loginLink = document.getElementById('login-link');
+        const loginForm = document.getElementById('login-form');
+        const signUpForm = document.getElementById('sign-up-form');
+
+        signUpLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            loginForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        });
+        loginLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            signUpForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
